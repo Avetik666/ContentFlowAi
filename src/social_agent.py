@@ -9,20 +9,20 @@ social_agent.py
 
 Used by `src.cli` for a simple command-line interface.
 """
+
 from __future__ import annotations
 
 import json
-import os
 from typing import Dict
 
 from dotenv import load_dotenv
+
 load_dotenv()  # Loads OPENAI_API_KEY and USER_AGENT from .env
-from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain_community.document_loaders import WebBaseLoader
+from langchain_openai import ChatOpenAI
 
 from .schedule_builder import build_schedule
-
 
 # --------------------------------------------------------------------------- #
 # 1.  Shared LLM instance
@@ -77,6 +77,7 @@ Schedule:
 """
 )
 
+
 # --------------------------------------------------------------------------- #
 # 3.  Small helper
 # --------------------------------------------------------------------------- #
@@ -114,9 +115,7 @@ async def generate_social_calendar(
     page_text = page_text[:4000]  # chars
 
     # 4-c. Summarise
-    summary_msg = (SUMMARY_PROMPT | llm).invoke(
-        {"url": url, "page_text": page_text}
-    )
+    summary_msg = (SUMMARY_PROMPT | llm).invoke({"url": url, "page_text": page_text})
     company_summary = _to_str(summary_msg)
 
     # 4-d. Generate posts

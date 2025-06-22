@@ -35,3 +35,17 @@ python3 -m src.cli \
   --interval day \
   --extra "focus on sustainability & hiring"
 # ➜  prints JSON + writes calendar.json
+```
+
+### Dev tooling
+
+```bash
+pip install -r requirements-dev.txt
+pre-commit install
+```
+# format everything
+```ruff check . --fix && black . && isort .```
+
+# run type checks
+```mypy src/```
+

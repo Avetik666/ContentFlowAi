@@ -3,7 +3,9 @@ Utility that converts (n_posts, interval) → ['Monday', 'Tuesday', …] or ['We
 
 Keeps date logic in one place so the LLM prompt stays dead-simple.
 """
+
 from __future__ import annotations
+
 from datetime import date, timedelta
 from typing import List
 

@@ -3,7 +3,9 @@ Small command-line interface so non-Python teammates can run:
 
     python -m src.cli --url https://www.rtx.com --posts 7 --interval day
 """
+
 from __future__ import annotations
+
 import argparse
 import asyncio
 import json
@@ -15,7 +17,9 @@ from .social_agent import generate_social_calendar
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Generate a social-media content calendar")
     p.add_argument("--url", required=True, help="Target website URL")
-    p.add_argument("--platform", default="instagram", help="instagram / facebook / etc.")
+    p.add_argument(
+        "--platform", default="instagram", help="instagram / facebook / etc."
+    )
     p.add_argument("--posts", type=int, default=7, help="Number of posts to create")
     p.add_argument(
         "--interval",
