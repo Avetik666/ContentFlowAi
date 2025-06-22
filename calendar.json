@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "label": "Monday",
+      "hook": "Ready to soar into a sustainable future?",
+      "caption": "At RTX, we're paving the way for a greener aerospace industry. \ud83c\udf0d\u2708\ufe0f Our commitment to aircraft electrification and innovative technologies is not just about advancing capabilities, but also about taking care of our planet. Join us on this journey towards sustainability! #AerospaceInnovation #SustainabilityGoals",
+      "visual": "A dynamic infographic showcasing RTX's sustainable technologies and initiatives, highlighting aircraft electrification.",
+      "hashtags": [
+        "#AerospaceInnovation",
+        "#SustainabilityGoals",
+        "#GreenAviation",
+        "#RTXSustainability"
+      ]
+    },
+    {
+      "label": "Tuesday",
+      "hook": "Join us in the mission to innovate and elevate!",
+      "caption": "Are you ready to take your career to new heights? \ud83d\ude80 RTX is searching for talented and passionate individuals to join our team. Be part of a company where innovation meets purpose, and help us lead the charge in aerospace and defense development. Check out our latest job openings today! #CareersAtRTX #Hiring",
+      "visual": "A compelling video featuring testimonials from RTX employees discussing their experiences and the impact of their work.",
+      "hashtags": [
+        "#CareersAtRTX",
+        "#Hiring",
+        "#JoinOurTeam",
+        "#JobOpportunities"
+      ]
+    },
+    {
+      "label": "Wednesday",
+      "hook": "The future of defense is here!",
+      "caption": "Witness the next generation of defense technology with RTX! \ud83d\udd25 Our F-35 fighter jet and advanced engine designs, like the F135 Engine Core Upgrade, embody cutting-edge innovation and reliability. Explore how we are not just meeting today\u2019s challenges but pioneering tomorrow\u2019s solutions. #DefenseInnovation #RTX",
+      "visual": "A stunning aerial shot of the F-35 fighter jet in action, highlighting its advanced capabilities.",
+      "hashtags": [
+        "#DefenseInnovation",
+        "#RTX",
+        "#F35",
+        "#Aerospace"
+      ]
+    }
+  ]
+}
